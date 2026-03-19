@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const rect = parallax.getBoundingClientRect();
                     const speed = 0.25;
                     const offset = rect.top * speed;
-                    parallax.style.backgroundPositionY = `calc(top + ${offset}px)`;
+                    parallax.style.backgroundPositionY = `${offset}px`;
                     ticking = false;
                 });
                 ticking = true;
