@@ -73,9 +73,7 @@
             <a href="#etaireia" class="mt-8 inline-block rounded-md bg-brand-magenta-dark px-6 py-3 text-base font-medium text-white hover:bg-brand-magenta transition-colors">
                 Μάθετε περισσότερα
             </a>
-            <div class="mt-12 mx-auto max-w-7xl">
-                <img src="/hero.jpg" alt="Αγρότης σε χωράφι σιταριού" class="w-full h-auto object-cover" style="border-radius: 30px;">
-            </div>
+            <div class="mt-12 mx-auto max-w-7xl bg-cover bg-center" role="img" aria-label="Αγρότης σε χωράφι σιταριού" style="background-image: url('/hero.jpg'); height: 400px; border-radius: 30px;"></div>
         </div>
     </section>
 
