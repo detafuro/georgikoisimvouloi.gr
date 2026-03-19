@@ -118,20 +118,20 @@
                         </p>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white p-6 text-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                            <p class="text-3xl font-bold text-brand-blue">10+</p>
+                        <div class="bg-white p-6 flex flex-col items-center justify-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                            <p class="text-3xl font-bold text-brand-magenta">10+</p>
                             <p class="mt-2 text-sm text-gray-600">Χρόνια Εμπειρίας</p>
                         </div>
-                        <div class="bg-white p-6 text-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                            <p class="text-3xl font-bold text-brand-blue">500+</p>
+                        <div class="bg-white p-6 flex flex-col items-center justify-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                            <p class="text-3xl font-bold text-brand-magenta">500+</p>
                             <p class="mt-2 text-sm text-gray-600">Πελάτες</p>
                         </div>
-                        <div class="bg-white p-6 text-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                            <p class="text-3xl font-bold text-brand-blue">1000+</p>
+                        <div class="bg-white p-6 flex flex-col items-center justify-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                            <p class="text-3xl font-bold text-brand-magenta">1000+</p>
                             <p class="mt-2 text-sm text-gray-600">Έργα</p>
                         </div>
-                        <div class="bg-white p-6 text-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                            <p class="text-3xl font-bold text-brand-blue">100%</p>
+                        <div class="bg-white p-6 flex flex-col items-center justify-center" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                            <p class="text-3xl font-bold text-brand-magenta">100%</p>
                             <p class="mt-2 text-sm text-gray-600">Αφοσίωση</p>
                         </div>
                     </div>
