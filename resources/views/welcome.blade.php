@@ -99,7 +99,7 @@
                     </div>
                     <div>
                         <h2 id="etaireia-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Η Εταιρεία</h2>
-                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+
                     </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
@@ -110,14 +110,30 @@
                         <p class="mt-4 text-base leading-relaxed">
                             Συνεχίζοντας την επιτυχημένη πορεία της & θέτοντας ακόμα υψηλότερους στόχους για πληρέστερη, ποιοτικότερη & αποτελεσματικότερη εξυπηρέτηση & υποστήριξη των πελατών της, η εταιρεία επεκτείνει την γκάμα των υπηρεσιών της σε λογιστικές υπηρεσίες.
                         </p>
-                    </div>
-                    <div>
-                        <p class="text-base leading-relaxed">
+                        <p class="mt-4 text-base leading-relaxed">
                             Εστιάζει στην εφαρμογή σύγχρονων συστημάτων παραγωγής, στη σύνταξη γεωτεχνικών και οικονομοτεχνικών μελετών που σχετίζονται με την επιχειρηματική γεωργική δραστηριότητα, καθώς και στην προώθηση της αγροτικής παραγωγής και την εκπαίδευση στελεχών του πρωτογενούς τομέα. Οι δραστηριότητές της απευθύνονται σε αγρότες, ομάδες και οργανώσεις παραγωγών, συνεταιρισμούς και αγροτικές επιχειρήσεις σε όλη την Ελλάδα.
                         </p>
                         <p class="mt-4 text-base leading-relaxed">
                             Παράλληλα, δίνεται έμφαση στην παραγωγή και προώθηση καινοτόμων και πιστοποιημένων γεωργικών υπηρεσιών, καθώς και στην εφαρμογή σύγχρονων πολιτικών και παραγωγικών μοντέλων που συμβάλλουν στην προστασία του κλίματος και του περιβάλλοντος.
                         </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg bg-gray-50 p-6 text-center">
+                            <p class="text-3xl font-bold text-brand-blue">10+</p>
+                            <p class="mt-2 text-sm text-gray-600">Χρόνια Εμπειρίας</p>
+                        </div>
+                        <div class="rounded-lg bg-gray-50 p-6 text-center">
+                            <p class="text-3xl font-bold text-brand-blue">500+</p>
+                            <p class="mt-2 text-sm text-gray-600">Πελάτες</p>
+                        </div>
+                        <div class="rounded-lg bg-gray-50 p-6 text-center">
+                            <p class="text-3xl font-bold text-brand-blue">1000+</p>
+                            <p class="mt-2 text-sm text-gray-600">Έργα</p>
+                        </div>
+                        <div class="rounded-lg bg-gray-50 p-6 text-center">
+                            <p class="text-3xl font-bold text-brand-blue">100%</p>
+                            <p class="mt-2 text-sm text-gray-600">Αφοσίωση</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,7 +150,7 @@
                     </div>
                     <div>
                         <h2 id="kyd-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Υπηρεσίες ΚΥΔ</h2>
-                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+
                     </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
@@ -185,7 +201,7 @@
                     </div>
                     <div>
                         <h2 id="ependytika-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Αγροτικά Επενδυτικά Σχέδια</h2>
-                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+
                     </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
@@ -232,7 +248,7 @@
                     </div>
                     <div>
                         <h2 id="logistikes-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Λογιστικές Υπηρεσίες</h2>
-                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+
                     </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
@@ -279,7 +295,7 @@
                     </div>
                     <div>
                         <h2 id="poiotita-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Συστήματα Ποιότητας</h2>
-                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+
                     </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
