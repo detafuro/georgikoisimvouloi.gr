@@ -65,10 +65,10 @@
     <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); margin-left: 5%; margin-right: 5%; border-radius: 30px;">
         <div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40 text-center">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-                ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ
+                Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα
             </h1>
             <p class="mt-6 text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα
+                Η συμβουλευτική υποστήριξη αποτελεί το μεγάλο συγκριτικό πλεονέκτημα των επιχειρήσεων που έχουν ως στόχο την ανάπτυξη, την επιτυχία και τη δημιουργία υπεραξίας
             </p>
             <a href="#etaireia" class="mt-8 inline-block rounded-md bg-brand-magenta-dark px-6 py-3 text-base font-medium text-white hover:bg-brand-magenta transition-colors">
                 Μάθετε περισσότερα
