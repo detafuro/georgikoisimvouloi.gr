@@ -62,8 +62,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); margin-left: 20px; margin-right: 20px;">
-        <div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
+    <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%);">
+        <div class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
             <div class="flex flex-col md:flex-row md:items-end md:gap-8">
                 <div class="md:w-[70%] text-left">
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
