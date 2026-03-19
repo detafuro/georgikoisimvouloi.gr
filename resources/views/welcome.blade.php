@@ -74,7 +74,7 @@
                 Μάθετε περισσότερα
             </a>
             <div class="mt-12 mx-auto max-w-7xl overflow-hidden" style="height: 400px; border-radius: 30px;">
-                <img id="hero-parallax" src="/hero.jpg" alt="Αγρότης σε χωράφι σιταριού" class="w-full object-cover object-top" style="height: 600px; will-change: transform;">
+                <img id="hero-parallax" src="/hero.jpg" alt="Αγρότης σε χωράφι σιταριού" class="w-full object-cover object-center" style="height: 600px; margin-top: -100px; will-change: transform;">
             </div>
         </div>
     </section>

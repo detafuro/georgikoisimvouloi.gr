@@ -43,9 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     const container = parallax.parentElement;
                     const rect = container.getBoundingClientRect();
                     const windowH = window.innerHeight;
-                    const progress = (windowH - rect.top) / (windowH + rect.height);
-                    const maxShift = parallax.offsetHeight - container.offsetHeight;
-                    const offset = Math.max(-maxShift, Math.min(0, -progress * maxShift));
+                    // progress: 0.5 when centered in viewport, 0 at bottom, 1 at top
+                    const progress = 1 - (rect.top + rect.height / 2) / windowH;
+                    // Shift up/down by max 50px from centered position
+                    const offset = (progress - 0.5) * 100;
                     parallax.style.transform = `translateY(${offset}px)`;
                     ticking = false;
                 });
