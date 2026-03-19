@@ -63,13 +63,22 @@
 
     <!-- Hero Section -->
     <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); margin-left: 5%; margin-right: 5%;">
-        <div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40 text-left">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-                Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα.
-            </h1>
-            <p class="mt-6 text-lg sm:text-xl text-gray-200 max-w-2xl leading-relaxed">
-                Η συμβουλευτική υποστήριξη αποτελεί το μεγάλο συγκριτικό πλεονέκτημα των επιχειρήσεων που έχουν ως στόχο την ανάπτυξη, την επιτυχία και τη δημιουργία υπεραξίας.
-            </p>
+        <div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
+            <div class="flex flex-col md:flex-row md:items-center md:gap-8">
+                <div class="md:w-[70%] text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+                        Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα.
+                    </h1>
+                    <p class="mt-6 text-lg sm:text-xl text-gray-200 leading-relaxed">
+                        Η συμβουλευτική υποστήριξη αποτελεί το μεγάλο συγκριτικό πλεονέκτημα των επιχειρήσεων που έχουν ως στόχο την ανάπτυξη, την επιτυχία και τη δημιουργία υπεραξίας.
+                    </p>
+                </div>
+                <div class="md:w-[30%] mt-8 md:mt-0 flex md:justify-center">
+                    <a href="#etaireia" class="inline-block rounded-full border-2 border-white bg-transparent px-8 py-3 text-base font-medium text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-brand-blue">
+                        Μάθετε περισσότερα
+                    </a>
+                </div>
+            </div>
             <div class="mt-12 mx-auto max-w-7xl overflow-hidden" style="height: 400px; border-radius: 30px;">
                 <img id="hero-parallax" src="/hero.jpg" alt="Αγρότης σε χωράφι σιταριού" class="w-full object-cover object-center" style="height: 600px; margin-top: -100px; will-change: transform;">
             </div>
