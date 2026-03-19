@@ -91,12 +91,16 @@
         <!-- 1. Η Εταιρεία -->
         <section id="etaireia" class="py-16 sm:py-20 bg-white" aria-labelledby="etaireia-heading">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <svg class="mx-auto h-12 w-12 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-                    </svg>
-                    <h2 id="etaireia-heading" class="mt-4 text-3xl sm:text-4xl font-bold text-brand-magenta">Η Εταιρεία</h2>
-                    <div class="mt-3 mx-auto h-1 w-16 rounded-full bg-brand-magenta"></div>
+                <div class="flex items-center gap-4">
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
+                        <svg class="h-7 w-7 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="etaireia-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Η Εταιρεία</h2>
+                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+                    </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     <div>
@@ -122,12 +126,16 @@
         <!-- 2. Υπηρεσίες ΚΥΔ -->
         <section id="ypiresies-kyd" class="py-16 sm:py-20 bg-gray-50" aria-labelledby="kyd-heading">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <svg class="mx-auto h-12 w-12 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
-                    </svg>
-                    <h2 id="kyd-heading" class="mt-4 text-3xl sm:text-4xl font-bold text-brand-magenta">Υπηρεσίες ΚΥΔ</h2>
-                    <div class="mt-3 mx-auto h-1 w-16 rounded-full bg-brand-magenta"></div>
+                <div class="flex items-center gap-4">
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
+                        <svg class="h-7 w-7 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="kyd-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Υπηρεσίες ΚΥΔ</h2>
+                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+                    </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     <div>
@@ -169,12 +177,16 @@
         <!-- 3. Αγροτικά Επενδυτικά Σχέδια -->
         <section id="ependytika" class="py-16 sm:py-20 bg-white" aria-labelledby="ependytika-heading">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <svg class="mx-auto h-12 w-12 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
-                    </svg>
-                    <h2 id="ependytika-heading" class="mt-4 text-3xl sm:text-4xl font-bold text-brand-magenta">Αγροτικά Επενδυτικά Σχέδια</h2>
-                    <div class="mt-3 mx-auto h-1 w-16 rounded-full bg-brand-magenta"></div>
+                <div class="flex items-center gap-4">
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
+                        <svg class="h-7 w-7 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="ependytika-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Αγροτικά Επενδυτικά Σχέδια</h2>
+                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+                    </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     <div>
@@ -212,12 +224,16 @@
         <!-- 4. Λογιστικές Υπηρεσίες -->
         <section id="logistikes" class="py-16 sm:py-20 bg-gray-50" aria-labelledby="logistikes-heading">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <svg class="mx-auto h-12 w-12 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
-                    </svg>
-                    <h2 id="logistikes-heading" class="mt-4 text-3xl sm:text-4xl font-bold text-brand-magenta">Λογιστικές Υπηρεσίες</h2>
-                    <div class="mt-3 mx-auto h-1 w-16 rounded-full bg-brand-magenta"></div>
+                <div class="flex items-center gap-4">
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
+                        <svg class="h-7 w-7 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="logistikes-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Λογιστικές Υπηρεσίες</h2>
+                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+                    </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     <div>
@@ -255,12 +271,16 @@
         <!-- 5. Συστήματα Ποιότητας -->
         <section id="poiotita" class="py-16 sm:py-20 bg-white" aria-labelledby="poiotita-heading">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <svg class="mx-auto h-12 w-12 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-                    </svg>
-                    <h2 id="poiotita-heading" class="mt-4 text-3xl sm:text-4xl font-bold text-brand-magenta">Συστήματα Ποιότητας</h2>
-                    <div class="mt-3 mx-auto h-1 w-16 rounded-full bg-brand-magenta"></div>
+                <div class="flex items-center gap-4">
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
+                        <svg class="h-7 w-7 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="poiotita-heading" class="text-3xl sm:text-4xl font-bold text-brand-magenta">Συστήματα Ποιότητας</h2>
+                        <div class="mt-2 h-1 w-16 rounded-full bg-brand-magenta"></div>
+                    </div>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     <div>
