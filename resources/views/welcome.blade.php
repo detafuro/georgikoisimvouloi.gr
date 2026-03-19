@@ -15,9 +15,9 @@
     <a href="#main-content" class="skip-nav">Μετάβαση στο περιεχόμενο</a>
 
     <!-- Header -->
-    <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur transition-shadow">
+    <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur transition-all duration-300 ease-in-out">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center justify-between">
+            <div class="flex h-20 items-center justify-between">
                 <a href="#">
                     <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-10 sm:h-12 w-auto">
                 </a>
@@ -29,7 +29,7 @@
                     <a href="#ependytika" class="text-sm font-medium text-brand-blue hover:text-brand-magenta transition-colors">Επενδυτικά Σχέδια</a>
                     <a href="#logistikes" class="text-sm font-medium text-brand-blue hover:text-brand-magenta transition-colors">Λογιστικές</a>
                     <a href="#poiotita" class="text-sm font-medium text-brand-blue hover:text-brand-magenta transition-colors">Ποιότητα</a>
-                    <a href="#epikoinonia" class="inline-block rounded-md bg-brand-magenta-dark px-4 py-2 text-sm font-medium text-white hover:bg-brand-magenta transition-colors">Επικοινωνία</a>
+                    <a href="#epikoinonia" class="inline-block rounded-full px-5 py-2 text-sm font-medium text-white transition-all duration-300 ease-in-out hover:opacity-90 hover:shadow-lg" style="background: linear-gradient(135deg, #002e7c, #c3057d);">Επικοινωνία</a>
                 </nav>
 
                 <!-- Mobile Menu Button -->
@@ -55,7 +55,7 @@
                     <a href="#ependytika" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Επενδυτικά Σχέδια</a>
                     <a href="#logistikes" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Λογιστικές</a>
                     <a href="#poiotita" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Ποιότητα</a>
-                    <a href="#epikoinonia" class="rounded-md bg-brand-magenta-dark px-3 py-2 text-sm font-medium text-white text-center">Επικοινωνία</a>
+                    <a href="#epikoinonia" class="rounded-full px-3 py-2 text-sm font-medium text-white text-center" style="background: linear-gradient(135deg, #002e7c, #c3057d);">Επικοινωνία</a>
                 </div>
             </nav>
         </div>

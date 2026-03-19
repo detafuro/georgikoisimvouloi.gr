@@ -21,15 +21,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Scroll shadow on header
+    // Smart header: hide on scroll down, show on scroll up with shadow
     const header = document.getElementById('site-header');
     if (header) {
+        let lastScrollY = 0;
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                header.classList.add('shadow-lg');
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                // Scrolling down — hide
+                header.style.transform = 'translateY(-100%)';
+                header.classList.remove('shadow-md');
             } else {
-                header.classList.remove('shadow-lg');
+                // Scrolling up — show
+                header.style.transform = 'translateY(0)';
+                if (currentScrollY > 10) {
+                    header.classList.add('shadow-md');
+                } else {
+                    header.classList.remove('shadow-md');
+                }
             }
+            lastScrollY = currentScrollY;
         }, { passive: true });
     }
 
