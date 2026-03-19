@@ -62,8 +62,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-brand-blue overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-brand-blue via-brand-blue to-brand-blue-dark opacity-90"></div>
+    <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); margin-left: 5%; margin-right: 5%;">
         <div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40 text-center">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
                 ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ
