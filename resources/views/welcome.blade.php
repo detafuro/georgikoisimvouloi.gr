@@ -62,7 +62,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); margin-left: 5%; margin-right: 5%;">
+    <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); margin-left: 20px; margin-right: 20px;">
         <div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
             <div class="flex flex-col md:flex-row md:items-end md:gap-8">
                 <div class="md:w-[70%] text-left">
