@@ -73,7 +73,7 @@
                         Η συμβουλευτική υποστήριξη αποτελεί το μεγάλο συγκριτικό πλεονέκτημα των επιχειρήσεων που έχουν ως στόχο την ανάπτυξη, την επιτυχία και τη δημιουργία υπεραξίας.
                     </p>
                 </div>
-                <div class="md:w-[30%] mt-8 md:mt-0 flex md:justify-center">
+                <div class="md:w-[30%] mt-8 md:mt-0 flex md:justify-center md:items-end">
                     <a href="#etaireia" class="inline-block rounded-full border-2 border-white bg-transparent px-8 py-3 text-base font-medium text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-brand-blue">
                         Μάθετε περισσότερα
                     </a>
