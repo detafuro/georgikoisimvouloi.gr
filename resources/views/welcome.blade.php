@@ -73,7 +73,9 @@
             <a href="#etaireia" class="mt-8 inline-block rounded-md bg-brand-magenta-dark px-6 py-3 text-base font-medium text-white hover:bg-brand-magenta transition-colors">
                 Μάθετε περισσότερα
             </a>
-            <div id="hero-parallax" class="mt-12 mx-auto max-w-7xl bg-cover bg-no-repeat bg-top" role="img" aria-label="Αγρότης σε χωράφι σιταριού" style="background-image: url('/hero.jpg'); height: 400px; border-radius: 30px;"></div>
+            <div class="mt-12 mx-auto max-w-7xl overflow-hidden" style="height: 400px; border-radius: 30px;">
+                <img id="hero-parallax" src="/hero.jpg" alt="Αγρότης σε χωράφι σιταριού" class="w-full object-cover object-top" style="height: 500px; will-change: transform;">
+            </div>
         </div>
     </section>
 

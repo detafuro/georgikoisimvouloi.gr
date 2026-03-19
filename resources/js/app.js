@@ -33,17 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { passive: true });
     }
 
-    // Smooth parallax on hero image via background-position
+    // Smooth parallax on hero image
     const parallax = document.getElementById('hero-parallax');
     if (parallax && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         let ticking = false;
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 requestAnimationFrame(() => {
-                    const rect = parallax.getBoundingClientRect();
-                    const speed = 0.25;
-                    const offset = rect.top * speed;
-                    parallax.style.backgroundPositionY = `${offset}px`;
+                    const container = parallax.parentElement;
+                    const rect = container.getBoundingClientRect();
+                    const windowH = window.innerHeight;
+                    const progress = (windowH - rect.top) / (windowH + rect.height);
+                    const maxShift = parallax.offsetHeight - container.offsetHeight;
+                    const offset = Math.max(-maxShift, Math.min(0, -progress * maxShift));
+                    parallax.style.transform = `translateY(${offset}px)`;
                     ticking = false;
                 });
                 ticking = true;
