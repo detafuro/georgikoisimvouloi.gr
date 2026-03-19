@@ -18,8 +18,8 @@
     <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur transition-shadow">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
-                <a href="#" class="text-lg font-bold tracking-tight text-brand-blue">
-                    ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ
+                <a href="#">
+                    <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-10 sm:h-12 w-auto">
                 </a>
 
                 <!-- Desktop Nav -->
