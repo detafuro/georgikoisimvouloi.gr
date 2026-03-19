@@ -32,4 +32,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, { passive: true });
     }
+
+    // Smooth parallax on hero image
+    const parallax = document.getElementById('hero-parallax');
+    if (parallax && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const rect = parallax.parentElement.getBoundingClientRect();
+                    const speed = 0.3;
+                    const offset = rect.top * speed;
+                    parallax.style.transform = `translateY(${offset}px)`;
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    }
 });
