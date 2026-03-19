@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!ticking) {
                 requestAnimationFrame(() => {
                     const rect = parallax.parentElement.getBoundingClientRect();
-                    const speed = 0.3;
+                    const speed = 0.15;
                     const offset = rect.top * speed;
                     parallax.style.transform = `translateY(${offset}px)`;
                     ticking = false;
