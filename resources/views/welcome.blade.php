@@ -432,7 +432,7 @@
                             </div>
                             <h2 id="epikoinonia-heading" class="text-xl sm:text-xl md:text-3xl font-bold" style="color: #c3057d;">Επικοινωνία</h2>
                         </div>
-                        <p style="margin-top: 12px; font-size: 18px; color: #222222; line-height: 1.6;">Επικοινωνήστε μαζί μας για οποιαδήποτε πληροφορία</p>
+                        <p style="margin-top: 12px; font-size: 18px; color: #222222; line-height: 1.6;">Επικοινωνήστε μαζί μας για οποιαδήποτε πληροφορία.</p>
 
                         <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 30px;">
                             <!-- Phone -->
