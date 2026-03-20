@@ -395,7 +395,7 @@
                                 </div>
                                 <h2 class="text-3xl sm:text-4xl font-bold" style="color: #c3057d; white-space: nowrap;">Θέσεις Εργασίας</h2>
                             </div>
-                            <p class="mt-4 leading-relaxed" style="font-size: 18px; color: #222222;">Η εταιρεία ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ ΕΕ στα πλαίσια της ανάπτυξης της, αναζητά συνεργάτες με ομαδικό πνεύμα και θέληση για εργασία σε όλο το φάσμα των δραστηριοτήτων της.</p>
+                            <p class="mt-4 leading-relaxed" style="font-size: 18px; color: #222222;">Η εταιρεία <strong>ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ Ε.Ε.</strong> στα πλαίσια της ανάπτυξης της, αναζητά συνεργάτες με ομαδικό πνεύμα και θέληση για εργασία σε όλο το φάσμα των δραστηριοτήτων της.</p>
                         </div>
                         <div>
                             <button onclick="window.dispatchEvent(new CustomEvent('open-cv-modal'))" class="inline-block rounded-full px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:opacity-90 hover:shadow-lg cursor-pointer" style="background: linear-gradient(135deg, #002e7c, #c3057d); white-space: nowrap; border: none;">Επικοινωνήστε μαζί μας</button>
