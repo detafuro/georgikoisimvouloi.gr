@@ -675,21 +675,15 @@
             var atEnd = tabScroll.scrollLeft + tabScroll.clientWidth >= tabScroll.scrollWidth - 5;
             tabWrapper.classList.toggle('scrolled-end', atEnd);
         });
-        // Bounce hint animation on load
-        setTimeout(function() {
-            if (tabScroll.scrollWidth > tabScroll.clientWidth) {
-                tabScroll.scrollTo({ left: 80, behavior: 'smooth' });
-                setTimeout(function() {
-                    tabScroll.scrollTo({ left: 0, behavior: 'smooth' });
-                    setTimeout(function() {
-                        tabScroll.scrollTo({ left: 50, behavior: 'smooth' });
-                        setTimeout(function() {
-                            tabScroll.scrollTo({ left: 0, behavior: 'smooth' });
-                        }, 300);
-                    }, 300);
-                }, 400);
-            }
-        }, 1200);
+        // Bounce hint animation on load via CSS
+        if (tabScroll.scrollWidth > tabScroll.clientWidth) {
+            setTimeout(function() {
+                tabScroll.style.animation = 'tabBounce 1s ease-in-out';
+                tabScroll.addEventListener('animationend', function() {
+                    tabScroll.style.animation = '';
+                }, { once: true });
+            }, 1200);
+        }
     }
 </script>
 
@@ -729,6 +723,13 @@
     }
     .tab-bar-scroll::-webkit-scrollbar {
         display: none;
+    }
+    @keyframes tabBounce {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-60px); }
+        50% { transform: translateX(0); }
+        75% { transform: translateX(-30px); }
+        100% { transform: translateX(0); }
     }
     @media (min-width: 768px) {
         .tab-bar-wrapper {
