@@ -131,19 +131,19 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-white p-6 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             <p class="text-3xl font-bold text-brand-magenta">10+</p>
-                            <p class="mt-2 text-sm text-gray-600">Χρόνια Εμπειρίας</p>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Χρόνια Εμπειρίας</p>
                         </div>
                         <div class="bg-white p-6 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             <p class="text-3xl font-bold text-brand-magenta">500+</p>
-                            <p class="mt-2 text-sm text-gray-600">Πελάτες</p>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Πελάτες</p>
                         </div>
                         <div class="bg-white p-6 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             <p class="text-3xl font-bold text-brand-magenta">1000+</p>
-                            <p class="mt-2 text-sm text-gray-600">Έργα</p>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Έργα</p>
                         </div>
                         <div class="bg-white p-6 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100" style="border-radius: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             <p class="text-3xl font-bold text-brand-magenta">100%</p>
-                            <p class="mt-2 text-sm text-gray-600">Αφοσίωση</p>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Αφοσίωση</p>
                         </div>
                     </div>
                 </div>
