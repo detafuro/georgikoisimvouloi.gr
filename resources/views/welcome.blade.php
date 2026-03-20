@@ -587,7 +587,7 @@
             <div class="footer-grid">
                 <!-- Company Info -->
                 <div>
-                    <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-8 w-auto mb-6" style="filter: brightness(0) invert(1); max-width: 40%;">
+                    <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-14 w-auto mb-6" style="filter: brightness(0) invert(1); max-width: 60%;">
                     <p style="color: #fff; font-size: 14px; line-height: 1.7; width: auto; padding-top: 30px;">Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα. Υψηλή ποιότητα υπηρεσιών, εξασφαλισμένες έγκυρες και έγκαιρες πληρωμές.</p>
                 </div>
                 <!-- Quick Links -->
