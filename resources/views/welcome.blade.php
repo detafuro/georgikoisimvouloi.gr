@@ -113,7 +113,7 @@
 
                     </div>
                 </div>
-                <div class="mt-12 grid gap-8 md:grid-cols-2" data-aos="fade-up" data-aos-delay="100">
+                <div class="mt-6 grid gap-8 md:grid-cols-2" data-aos="fade-up" data-aos-delay="100">
                     <div>
                         <p class="leading-relaxed" style="font-size: 18px; color: #222222;">
                             Η εταιρεία <strong>Γεωργικοί Σύμβουλοι Ε.Ε.</strong> ιδρύθηκε το 2014 έχοντας ως αντικείμενο την παροχή ολοκληρωμένων υπηρεσιών συμβουλευτικής υποστήριξης σε αγροτικές και κτηνοτροφικές επιχειρήσεις του Νομού Πέλλας & την ευρύτερης περιοχής της Κεντρικής Μακεδονίας.
@@ -162,10 +162,10 @@
                         </div>
                         <h2 id="kyd-heading" class="text-xl sm:text-xl md:text-3xl font-bold" style="color: #c3057d;">Υπηρεσίες</h2>
                     </div>
-                    <p class="mt-4" style="font-size: 18px; color: #222222;">Υψηλή ποιότητα υπηρεσιών, εξασφαλισμένες έγκυρες και έγκαιρες πληρωμές.</p>
+                    <p class="mt-2" style="font-size: 18px; color: #222222;">Υψηλή ποιότητα υπηρεσιών, εξασφαλισμένες έγκυρες και έγκαιρες πληρωμές.</p>
                 </div>
                 <!-- Carousel Tabs -->
-                <div class="mt-16" data-aos="fade-up" data-aos-delay="200">
+                <div class="mt-6" data-aos="fade-up" data-aos-delay="200">
 
                     <!-- Tab Bar -->
                     <div class="mb-10" style="text-align: center;">
