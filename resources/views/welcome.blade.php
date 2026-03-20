@@ -675,11 +675,19 @@
             var atEnd = tabScroll.scrollLeft + tabScroll.clientWidth >= tabScroll.scrollWidth - 5;
             tabWrapper.classList.toggle('scrolled-end', atEnd);
         });
-        // Subtle nudge animation on load
+        // Bounce hint animation on load
         setTimeout(function() {
             if (tabScroll.scrollWidth > tabScroll.clientWidth) {
-                tabScroll.scrollTo({ left: 40, behavior: 'smooth' });
-                setTimeout(function() { tabScroll.scrollTo({ left: 0, behavior: 'smooth' }); }, 400);
+                tabScroll.scrollTo({ left: 80, behavior: 'smooth' });
+                setTimeout(function() {
+                    tabScroll.scrollTo({ left: 0, behavior: 'smooth' });
+                    setTimeout(function() {
+                        tabScroll.scrollTo({ left: 50, behavior: 'smooth' });
+                        setTimeout(function() {
+                            tabScroll.scrollTo({ left: 0, behavior: 'smooth' });
+                        }, 300);
+                    }, 300);
+                }, 400);
             }
         }, 1200);
     }
@@ -701,8 +709,8 @@
         right: 0;
         top: 0;
         bottom: 0;
-        width: 60px;
-        background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+        width: 100px;
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,1) 100%);
         border-radius: 0 9999px 9999px 0;
         pointer-events: none;
         transition: opacity 0.3s;
