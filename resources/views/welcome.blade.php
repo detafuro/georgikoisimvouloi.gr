@@ -60,7 +60,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="Μενού κινητού">
+            <nav id="mobile-menu" class="md:hidden pb-4" aria-label="Μενού κινητού" style="max-height: 0; overflow: hidden; transition: max-height 0.35s ease-in-out, opacity 0.3s ease; opacity: 0;">
                 <div class="flex flex-col gap-2">
                     <a href="#etaireia" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Η Εταιρεία</a>
                     <a href="#services" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Υπηρεσίες</a>
