@@ -186,7 +186,7 @@
 
                     <!-- Panel 1: ΥΠΗΡΕΣΙΕΣ ΚΥΔ -->
                     <div id="kyd-panel-1" role="tabpanel" class="kyd-panel" style="margin-top: 30px;">
-                        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; min-height: 500px;">
+                        <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                                 <div>
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
@@ -212,7 +212,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="tab-grid-image">
                                 <img src="/kyd.jpg" alt="Υπηρεσίες ΚΥΔ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             </div>
                         </div>
@@ -220,7 +220,7 @@
 
                     <!-- Panel 2: ΕΠΕΝΔΥΤΙΚΑ ΣΧΕΔΙΑ -->
                     <div id="kyd-panel-2" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
-                        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; min-height: 500px;">
+                        <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                                 <div>
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
@@ -258,7 +258,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="tab-grid-image">
                                 <img src="/ependitika-sxedia.jpg" alt="Επενδυτικά Σχέδια" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             </div>
                         </div>
@@ -266,7 +266,7 @@
 
                     <!-- Panel 3: ΕΣΠΑ -->
                     <div id="kyd-panel-3" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
-                        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; min-height: 500px;">
+                        <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                                 <div>
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
@@ -296,7 +296,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="tab-grid-image">
                                 <img src="/espa.png" alt="ΕΣΠΑ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             </div>
                         </div>
@@ -304,7 +304,7 @@
 
                     <!-- Panel 4: ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ -->
                     <div id="kyd-panel-4" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
-                        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; min-height: 500px;">
+                        <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                                 <div>
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
@@ -334,7 +334,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="tab-grid-image">
                                 <img src="/logistikes-ipiresies.png" alt="Λογιστικές Υπηρεσίες" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             </div>
                         </div>
@@ -342,7 +342,7 @@
 
                     <!-- Panel 5: ΣΥΣΤΗΜΑΤΑ ΠΟΙΟΤΗΤΑΣ -->
                     <div id="kyd-panel-5" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
-                        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; min-height: 500px;">
+                        <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                                 <div>
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
@@ -372,7 +372,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="tab-grid-image">
                                 <img src="/iso.png" alt="Συστήματα Ποιότητας" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                             </div>
                         </div>
@@ -387,7 +387,7 @@
         <section id="theseis-ergasias" class="py-16 sm:py-20 bg-white">
             <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
                 <div data-aos="fade-up" style="background: #fff; border-radius: 30px; padding: 30px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                    <div style="display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;">
+                    <div class="jobs-grid">
                         <div>
                             <div class="flex items-center gap-4">
                                 <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
@@ -414,7 +414,7 @@
         <!-- Contact Section -->
         <section id="epikoinonia" class="py-16 sm:py-20 bg-gray-50" aria-labelledby="epikoinonia-heading">
             <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
-                <div data-aos="fade-up" style="background: #fff; border-radius: 30px; padding: 40px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18); display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                <div class="contact-grid" data-aos="fade-up" style="background: #fff; border-radius: 30px; padding: 40px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
 
                     <!-- Left Column: Title + Boxes -->
                     <div>
@@ -586,7 +586,7 @@
     <!-- Footer -->
     <footer style="background: linear-gradient(135deg, #001a47 0%, #002e7c 100%);">
         <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px; padding: 60px 16px 0;">
-            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 40px;">
+            <div class="footer-grid">
                 <!-- Company Info -->
                 <div>
                     <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-8 w-auto mb-6" style="filter: brightness(0) invert(1); max-width: 40%;">
@@ -671,6 +671,54 @@
 </script>
 
 <style>
+    .tab-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        min-height: auto;
+    }
+    .tab-grid-image {
+        display: none;
+    }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+    .jobs-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        align-items: center;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+    @media (min-width: 768px) {
+        .jobs-grid {
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+        }
+        .footer-grid {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 1024px) {
+        .tab-grid {
+            grid-template-columns: 1fr 2fr;
+            min-height: 500px;
+        }
+        .tab-grid-image {
+            display: block;
+        }
+        .contact-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
     .cv-submit-btn {
         width: 100%;
         padding: 14px;
