@@ -162,7 +162,7 @@
                         </div>
                         <h2 id="kyd-heading" class="text-xl sm:text-xl md:text-3xl font-bold" style="color: #c3057d;">Υπηρεσίες</h2>
                     </div>
-                    <p class="mt-2" style="font-size: 18px; color: #222222;">Υψηλή ποιότητα υπηρεσιών, εξασφαλισμένες έγκυρες και έγκαιρες πληρωμές.</p>
+                    <p class="mt-2 lg:pb-5" style="font-size: 18px; color: #222222;">Υψηλή ποιότητα υπηρεσιών, εξασφαλισμένες έγκυρες και έγκαιρες πληρωμές.</p>
                 </div>
                 <!-- Carousel Tabs -->
                 <div class="mt-6" data-aos="fade-up" data-aos-delay="200">
