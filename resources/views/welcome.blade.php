@@ -832,10 +832,19 @@
     }
     .espa-floating {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
         z-index: 9999;
-        width: 760px;
+        width: auto;
+    }
+    @media (min-width: 768px) {
+        .espa-floating {
+            left: auto;
+            right: 20px;
+            bottom: 20px;
+            width: 760px;
+        }
     }
     .espa-hidden .espa-content {
         max-height: 0;
