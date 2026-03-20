@@ -161,26 +161,24 @@
 
                     <!-- Tab Bar -->
                     <div class="mb-10">
-                        <div class="md:flex justify-center">
-                            <div class="md:flex bg-white rounded-2xl transition" style="padding: 1rem; border-radius: 9999px; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                                <nav class="flex md:flex-nowrap flex-wrap justify-center whitespace-nowrap" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
-                                    <button type="button" class="kyd-tab text-base lg:text-lg inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="padding: 10px 20px; background-color: #c3057d; color: #fff;" data-tab="kyd-panel-1" aria-selected="true" aria-controls="kyd-panel-1" role="tab">
+                        <div class="tab-bar-wrapper">
+                            <nav class="tab-bar-scroll" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
+                                    <button type="button" class="kyd-tab text-sm lg:text-base inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="flex-shrink: 0; padding: 10px 20px; background-color: #c3057d; color: #fff;" data-tab="kyd-panel-1" aria-selected="true" aria-controls="kyd-panel-1" role="tab">
                                         ΥΠΗΡΕΣΙΕΣ ΚΥΔ
                                     </button>
-                                    <button type="button" class="kyd-tab text-base lg:text-lg inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-2" aria-selected="false" aria-controls="kyd-panel-2" role="tab">
+                                    <button type="button" class="kyd-tab text-sm lg:text-base inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="flex-shrink: 0; padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-2" aria-selected="false" aria-controls="kyd-panel-2" role="tab">
                                         ΕΠΕΝΔΥΤΙΚΑ ΣΧΕΔΙΑ
                                     </button>
-                                    <button type="button" class="kyd-tab text-base lg:text-lg inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-3" aria-selected="false" aria-controls="kyd-panel-3" role="tab">
+                                    <button type="button" class="kyd-tab text-sm lg:text-base inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="flex-shrink: 0; padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-3" aria-selected="false" aria-controls="kyd-panel-3" role="tab">
                                         ΕΣΠΑ
                                     </button>
-                                    <button type="button" class="kyd-tab text-base lg:text-lg inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-4" aria-selected="false" aria-controls="kyd-panel-4" role="tab">
+                                    <button type="button" class="kyd-tab text-sm lg:text-base inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="flex-shrink: 0; padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-4" aria-selected="false" aria-controls="kyd-panel-4" role="tab">
                                         ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ
                                     </button>
-                                    <button type="button" class="kyd-tab text-base lg:text-lg inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-5" aria-selected="false" aria-controls="kyd-panel-5" role="tab">
+                                    <button type="button" class="kyd-tab text-sm lg:text-base inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="flex-shrink: 0; padding: 10px 20px; background-color: transparent; color: inherit;" data-tab="kyd-panel-5" aria-selected="false" aria-controls="kyd-panel-5" role="tab">
                                         ΣΥΣΤΗΜΑΤΑ ΠΟΙΟΤΗΤΑΣ
                                     </button>
-                                </nav>
-                            </div>
+                            </nav>
                         </div>
                     </div>
 
@@ -671,6 +669,34 @@
 </script>
 
 <style>
+    .tab-bar-wrapper {
+        width: 100%;
+        background: #fff;
+        border-radius: 9999px;
+        padding: 8px;
+        box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);
+        overflow: hidden;
+    }
+    .tab-bar-scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 4px;
+    }
+    .tab-bar-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .tab-bar-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        .tab-bar-scroll {
+            overflow-x: visible;
+        }
+    }
     .tab-grid {
         display: grid;
         grid-template-columns: 1fr;
