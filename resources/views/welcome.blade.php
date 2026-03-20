@@ -860,13 +860,8 @@
         font-size: 13px;
         font-weight: 600;
         white-space: nowrap;
-        box-shadow: 0 4px 12px rgba(195, 5, 125, 0.3);
+        box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);
         width: fit-content;
-        transition: opacity 0.3s, box-shadow 0.3s;
-    }
-    .espa-toggle:hover {
-        opacity: 0.9;
-        box-shadow: 0 6px 20px rgba(195, 5, 125, 0.4);
     }
     .espa-arrow {
         width: 16px;
