@@ -4,8 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="/favicon.png">
-    <title>ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ ΕΕ | Συμβουλευτικές Υπηρεσίες Αγροτικού Τομέα</title>
-    <meta name="description" content="Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα">
+    <title>ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ Ε.Ε. | Συμβουλευτικές Υπηρεσίες Αγροτικού Τομέα</title>
+    <meta name="description" content="Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα. Υπηρεσίες ΚΥΔ, Επενδυτικά Σχέδια, ΕΣΠΑ, Λογιστικές Υπηρεσίες, Συστήματα Ποιότητας. Γιαννιτσά, Πέλλα.">
+    <meta name="keywords" content="γεωργικοί σύμβουλοι, ΚΥΔ, ΟΣΔΕ, ΕΑΕ, επενδυτικά σχέδια, ΕΣΠΑ, λογιστικές υπηρεσίες, συστήματα ποιότητας, ISO, Γιαννιτσά, Πέλλα">
+    <meta property="og:title" content="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ Ε.Ε. | Συμβουλευτικές Υπηρεσίες Αγροτικού Τομέα">
+    <meta property="og:description" content="Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα. Γιαννιτσά, Πέλλα.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://georgikoisimvouloi.gr">
+    <meta property="og:image" content="https://georgikoisimvouloi.gr/hero.jpg">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://georgikoisimvouloi.gr">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=roboto:400,500,700&display=swap" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -24,7 +32,7 @@
         <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
             <div class="flex h-20 items-center justify-between">
                 <a href="#">
-                    <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-10 sm:h-12 w-auto">
+                    <picture><source srcset="/logo.webp" type="image/webp"><img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-10 sm:h-12 w-auto" width="562" height="149"></picture>
                 </a>
 
                 <!-- Desktop Nav -->
@@ -83,7 +91,7 @@
                 </div>
             </div>
             <div class="mt-12 mx-auto overflow-hidden" style="max-width: 1400px; height: 400px; border-radius: 30px;">
-                <img id="hero-parallax" src="/hero.jpg" alt="Αγρότης σε χωράφι σιταριού" class="w-full object-cover object-center" style="height: 600px; margin-top: -100px; will-change: transform;">
+                <picture><source srcset="/hero.webp" type="image/webp"><img id="hero-parallax" src="/hero.jpg" alt="Αγρότης σε χωράφι σιταριού" class="w-full object-cover object-center" style="height: 600px; margin-top: -100px; will-change: transform;" width="1440" height="960"></picture>
             </div>
         </div>
     </section>
@@ -211,7 +219,7 @@
                                 </div>
                             </div>
                             <div class="tab-grid-image">
-                                <img src="/kyd.jpg" alt="Υπηρεσίες ΚΥΔ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                                <picture><source srcset="/kyd.webp" type="image/webp"><img src="/kyd.jpg" alt="Υπηρεσίες ΚΥΔ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);" width="1266" height="702" loading="lazy"></picture>
                             </div>
                         </div>
                     </div>
@@ -257,7 +265,7 @@
                                 </div>
                             </div>
                             <div class="tab-grid-image">
-                                <img src="/ependitika-sxedia.jpg" alt="Επενδυτικά Σχέδια" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                                <picture><source srcset="/ependitika-sxedia.webp" type="image/webp"><img src="/ependitika-sxedia.jpg" alt="Επενδυτικά Σχέδια" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);" width="804" height="300" loading="lazy"></picture>
                             </div>
                         </div>
                     </div>
@@ -295,7 +303,7 @@
                                 </div>
                             </div>
                             <div class="tab-grid-image">
-                                <img src="/espa.png" alt="ΕΣΠΑ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                                <picture><source srcset="/espa.webp" type="image/webp"><img src="/espa.png" alt="ΕΣΠΑ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);" width="804" height="300" loading="lazy"></picture>
                             </div>
                         </div>
                     </div>
@@ -333,7 +341,7 @@
                                 </div>
                             </div>
                             <div class="tab-grid-image">
-                                <img src="/logistikes-ipiresies.png" alt="Λογιστικές Υπηρεσίες" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                                <picture><source srcset="/logistikes-ipiresies.webp" type="image/webp"><img src="/logistikes-ipiresies.png" alt="Λογιστικές Υπηρεσίες" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);" width="804" height="241" loading="lazy"></picture>
                             </div>
                         </div>
                     </div>
@@ -371,7 +379,7 @@
                                 </div>
                             </div>
                             <div class="tab-grid-image">
-                                <img src="/iso.png" alt="Συστήματα Ποιότητας" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                                <picture><source srcset="/iso.webp" type="image/webp"><img src="/iso.png" alt="Συστήματα Ποιότητας" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);" width="804" height="300" loading="lazy"></picture>
                             </div>
                         </div>
                     </div>
@@ -404,7 +412,7 @@
                 </div>
 
                 <div class="hidden md:block" style="margin-top: 40px;" data-aos="fade-up" data-aos-delay="100">
-                    <img src="/theseis-ergasias.png" alt="Θέσεις Εργασίας" style="width: 100%; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
+                    <picture><source srcset="/theseis-ergasias.webp" type="image/webp"><img src="/theseis-ergasias.png" alt="Θέσεις Εργασίας" style="width: 100%; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);" width="1920" height="394" loading="lazy"></picture>
                 </div>
             </div>
         </section>
@@ -587,7 +595,7 @@
             <div class="footer-grid">
                 <!-- Company Info -->
                 <div>
-                    <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-14 w-auto mb-6" style="filter: brightness(0) invert(1); max-width: 60%;">
+                    <picture><source srcset="/logo.webp" type="image/webp"><img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-14 w-auto mb-6" style="filter: brightness(0) invert(1); max-width: 60%;" width="562" height="149"></picture>
                     <p style="color: #fff; font-size: 14px; line-height: 1.7; width: auto; padding-top: 30px;">Ολοκληρωμένες συμβουλευτικές υπηρεσίες για τον αγροτικό τομέα. Υψηλή ποιότητα υπηρεσιών, εξασφαλισμένες έγκυρες και έγκαιρες πληρωμές.</p>
                 </div>
                 <!-- Quick Links -->
@@ -917,7 +925,7 @@
     </button>
     <div class="espa-content">
         <a href="/frameEL.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="/antagonistikotitaframeEL.jpg" alt="ΕΣΠΑ - Ευρωπαϊκό Ταμείο Περιφερειακής Ανάπτυξης" loading="lazy">
+            <picture><source srcset="/antagonistikotitaframeEL.webp" type="image/webp"><img src="/antagonistikotitaframeEL.jpg" alt="ΕΣΠΑ - Ευρωπαϊκό Ταμείο Περιφερειακής Ανάπτυξης" loading="lazy" width="1956" height="231"></picture>
         </a>
     </div>
 </div>
