@@ -817,6 +817,11 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+    @media (max-width: 767px) {
+        main p, section p {
+            font-size: 16px !important;
+        }
+    }
     .cv-submit-btn {
         width: 100%;
         padding: 14px;
