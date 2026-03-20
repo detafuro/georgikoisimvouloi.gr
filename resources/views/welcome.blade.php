@@ -782,7 +782,10 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 40px;
-        align-items: start;
+        align-items: start !important;
+    }
+    .contact-grid > div {
+        align-self: start;
     }
     .jobs-grid {
         display: grid;
