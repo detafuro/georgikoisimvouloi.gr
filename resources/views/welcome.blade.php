@@ -666,6 +666,23 @@
     });
 
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+
+    // Tab bar scroll fade indicator
+    var tabScroll = document.querySelector('.tab-bar-scroll');
+    var tabWrapper = document.querySelector('.tab-bar-wrapper');
+    if (tabScroll && tabWrapper) {
+        tabScroll.addEventListener('scroll', function() {
+            var atEnd = tabScroll.scrollLeft + tabScroll.clientWidth >= tabScroll.scrollWidth - 5;
+            tabWrapper.classList.toggle('scrolled-end', atEnd);
+        });
+        // Subtle nudge animation on load
+        setTimeout(function() {
+            if (tabScroll.scrollWidth > tabScroll.clientWidth) {
+                tabScroll.scrollTo({ left: 40, behavior: 'smooth' });
+                setTimeout(function() { tabScroll.scrollTo({ left: 0, behavior: 'smooth' }); }, 400);
+            }
+        }, 1200);
+    }
 </script>
 
 <style>
@@ -676,6 +693,23 @@
         padding: 8px;
         box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);
         overflow: hidden;
+        position: relative;
+    }
+    .tab-bar-wrapper::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+        border-radius: 0 9999px 9999px 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        z-index: 1;
+    }
+    .tab-bar-wrapper.scrolled-end::after {
+        opacity: 0;
     }
     .tab-bar-scroll {
         display: flex;
@@ -692,6 +726,9 @@
         .tab-bar-wrapper {
             display: flex;
             justify-content: center;
+        }
+        .tab-bar-wrapper::after {
+            display: none;
         }
         .tab-bar-scroll {
             overflow-x: visible;
