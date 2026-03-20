@@ -145,8 +145,8 @@
         <!-- 2. Υπηρεσίες -->
         <section id="services" class="py-16 sm:py-20 bg-gray-50" aria-labelledby="kyd-heading">
             <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
-                <div class="text-center" style="padding-bottom: 30px;" data-aos="fade-up">
-                    <div class="flex items-center justify-center gap-4">
+                <div class="text-left md:text-center" style="padding-bottom: 30px;" data-aos="fade-up">
+                    <div class="flex items-center gap-4 md:justify-center">
                         <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
                             <svg class="h-7 w-7 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0" />
@@ -186,7 +186,7 @@
                     <div id="kyd-panel-1" role="tabpanel" class="kyd-panel" style="margin-top: 30px;">
                         <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                                <div>
+                                <div style="padding-bottom: 30px;">
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
                                         <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" /></svg>
                                     </div>
@@ -220,7 +220,7 @@
                     <div id="kyd-panel-2" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
                         <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                                <div>
+                                <div style="padding-bottom: 30px;">
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
                                         <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
                                     </div>
@@ -266,7 +266,7 @@
                     <div id="kyd-panel-3" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
                         <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                                <div>
+                                <div style="padding-bottom: 30px;">
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
                                         <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5a17.92 17.92 0 0 1-8.716-2.247m0 0A8.966 8.966 0 0 1 3 12c0-1.264.26-2.467.732-3.558" /></svg>
                                     </div>
@@ -304,7 +304,7 @@
                     <div id="kyd-panel-4" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
                         <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                                <div>
+                                <div style="padding-bottom: 30px;">
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
                                         <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" /></svg>
                                     </div>
@@ -342,7 +342,7 @@
                     <div id="kyd-panel-5" role="tabpanel" class="kyd-panel hidden" style="margin-top: 30px;">
                         <div class="tab-grid">
                             <div class="text-white p-6" style="background: linear-gradient(135deg, #002e7c 0%, #c3057d 100%); border-radius: 30px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
-                                <div>
+                                <div style="padding-bottom: 30px;">
                                     <div class="bg-brand-magenta rounded-full flex items-center justify-center" style="width: 54px; height: 54px;">
                                         <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
                                     </div>
