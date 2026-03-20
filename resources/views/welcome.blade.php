@@ -655,6 +655,12 @@
     document.querySelectorAll('.kyd-tab').forEach(function(btn) {
         btn.addEventListener('click', function() {
             activateTab(btn.dataset.tab);
+            // Auto-scroll tab bar so active tab is visible at the start
+            var nav = btn.closest('.tab-bar-scroll');
+            if (nav) {
+                var offset = btn.offsetLeft - 12;
+                nav.scrollTo({ left: offset, behavior: 'smooth' });
+            }
         });
     });
 
@@ -675,13 +681,30 @@
             var atEnd = tabScroll.scrollLeft + tabScroll.clientWidth >= tabScroll.scrollWidth - 5;
             tabWrapper.classList.toggle('scrolled-end', atEnd);
         });
-        // Bounce hint animation on load via CSS
+        // Bounce hint animation on load
+        function animateScroll(el, to, duration, cb) {
+            var start = el.scrollLeft;
+            var diff = to - start;
+            var startTime = null;
+            function step(ts) {
+                if (!startTime) startTime = ts;
+                var progress = Math.min((ts - startTime) / duration, 1);
+                var ease = progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress;
+                el.scrollLeft = start + diff * ease;
+                if (progress < 1) requestAnimationFrame(step);
+                else if (cb) cb();
+            }
+            requestAnimationFrame(step);
+        }
         if (tabScroll.scrollWidth > tabScroll.clientWidth) {
             setTimeout(function() {
-                tabScroll.style.animation = 'tabBounce 1s ease-in-out';
-                tabScroll.addEventListener('animationend', function() {
-                    tabScroll.style.animation = '';
-                }, { once: true });
+                animateScroll(tabScroll, 80, 250, function() {
+                    animateScroll(tabScroll, 0, 250, function() {
+                        animateScroll(tabScroll, 40, 200, function() {
+                            animateScroll(tabScroll, 0, 200);
+                        });
+                    });
+                });
             }, 1200);
         }
     }
@@ -723,13 +746,6 @@
     }
     .tab-bar-scroll::-webkit-scrollbar {
         display: none;
-    }
-    @keyframes tabBounce {
-        0% { transform: translateX(0); }
-        25% { transform: translateX(-60px); }
-        50% { transform: translateX(0); }
-        75% { transform: translateX(-30px); }
-        100% { transform: translateX(0); }
     }
     @media (min-width: 768px) {
         .tab-bar-wrapper {
