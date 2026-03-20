@@ -403,7 +403,7 @@
                     </div>
                 </div>
 
-                <div style="margin-top: 40px;" data-aos="fade-up" data-aos-delay="100">
+                <div class="hidden md:block" style="margin-top: 40px;" data-aos="fade-up" data-aos-delay="100">
                     <img src="/theseis-ergasias.png" alt="Θέσεις Εργασίας" style="width: 100%; border-radius: 30px; display: block; box-shadow: 0px 2px 70px 0px rgba(110, 130, 208, 0.18);">
                 </div>
             </div>
