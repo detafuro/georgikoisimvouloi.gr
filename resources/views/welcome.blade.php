@@ -145,7 +145,7 @@
         <!-- 2. Υπηρεσίες -->
         <section id="services" class="py-16 sm:py-20 bg-gray-50" aria-labelledby="kyd-heading">
             <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
-                <div class="text-left md:text-center" style="padding-bottom: 30px;" data-aos="fade-up">
+                <div class="text-left md:text-center" data-aos="fade-up">
                     <div class="flex items-center gap-4 md:justify-center">
                         <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-magenta/10">
                             <svg class="h-7 w-7 text-brand-magenta" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
