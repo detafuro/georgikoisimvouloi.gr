@@ -160,7 +160,7 @@
                 <div class="mt-16" data-aos="fade-up" data-aos-delay="200">
 
                     <!-- Tab Bar -->
-                    <div class="mb-10">
+                    <div class="mb-10" style="text-align: center;">
                         <div class="tab-bar-wrapper">
                             <nav class="tab-bar-scroll" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
                                     <button type="button" class="kyd-tab text-sm lg:text-base inline-flex items-center gap-x-2 bg-transparent focus:outline-hidden font-medium rounded-full disabled:opacity-50 disabled:pointer-events-none cursor-pointer" style="flex-shrink: 0; padding: 10px 20px; background-color: #c3057d; color: #fff;" data-tab="kyd-panel-1" aria-selected="true" aria-controls="kyd-panel-1" role="tab">
@@ -732,8 +732,10 @@
     }
     @media (min-width: 768px) {
         .tab-bar-wrapper {
-            display: flex;
-            justify-content: center;
+            display: inline-flex;
+            margin: 0 auto;
+            width: auto;
+            border-radius: 9999px;
         }
         .tab-bar-wrapper::after {
             display: none;
