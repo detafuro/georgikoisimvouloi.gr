@@ -29,7 +29,7 @@
 
     <!-- Header -->
     <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur transition-all duration-300 ease-in-out">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
+        <div class="relative mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
             <div class="flex h-20 items-center justify-between">
                 <a href="#">
                     <picture><source srcset="/logo.webp" type="image/webp"><img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-10 sm:h-12 w-auto" width="562" height="149"></picture>
@@ -60,8 +60,8 @@
             </div>
 
             <!-- Mobile Menu -->
-            <nav id="mobile-menu" class="md:hidden pb-4" aria-label="Μενού κινητού" style="max-height: 0; overflow: hidden; transition: max-height 0.35s ease-in-out, opacity 0.3s ease; opacity: 0;">
-                <div class="flex flex-col gap-2">
+            <nav id="mobile-menu" class="md:hidden" aria-label="Μενού κινητού" style="max-height: 0; overflow: hidden; transition: max-height 0.35s ease-in-out, opacity 0.3s ease; opacity: 0; position: absolute; left: 0; right: 0; top: 100%; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 0 16px; z-index: 50;">
+                <div class="flex flex-col gap-2" style="padding: 12px 0;">
                     <a href="#etaireia" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Η Εταιρεία</a>
                     <a href="#services" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Υπηρεσίες</a>
                     <a href="#theseis-ergasias" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Θέσεις Εργασίας</a>
