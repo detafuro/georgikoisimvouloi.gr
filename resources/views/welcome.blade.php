@@ -22,7 +22,7 @@
     <!-- Header -->
     <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur transition-all duration-300 ease-in-out">
         <div class="mx-auto px-4 sm:px-6 lg:px-8" style="max-width: 1400px;">
-            <div class="flex h-20 items-center justify-between">
+            <div class="flex h-14 md:h-20 items-center justify-between">
                 <a href="#">
                     <img src="/logo.png" alt="ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ" class="h-10 sm:h-12 w-auto">
                 </a>
