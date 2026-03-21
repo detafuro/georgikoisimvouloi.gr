@@ -52,8 +52,8 @@
             </div>
 
             <!-- Mobile Menu -->
-            <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="Μενού κινητού">
-                <div class="flex flex-col gap-2">
+            <nav id="mobile-menu" class="hidden md:hidden" aria-label="Μενού κινητού" style="position: absolute; left: 0; right: 0; top: 100%; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 0 16px; z-index: 50;">
+                <div class="flex flex-col gap-2" style="padding: 12px 0;">
                     <a href="#etaireia" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Η Εταιρεία</a>
                     <a href="#services" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Υπηρεσίες</a>
                     <a href="#theseis-ergasias" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Θέσεις Εργασίας</a>
