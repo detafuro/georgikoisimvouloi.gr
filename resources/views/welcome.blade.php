@@ -509,8 +509,8 @@
     </main>
 
     <!-- CV Modal -->
-    <div x-data="{ open: false, submitting: false, success: false }"
-         x-on:open-cv-modal.window="open = true; success = false"
+    <div x-data="{ open: false, submitting: false, success: false, fileName: '', fileSize: '' }"
+         x-on:open-cv-modal.window="open = true; success = false; fileName = ''; fileSize = '';"
          x-show="open"
          x-cloak
          style="position: fixed; inset: 0; z-index: 10000;"
@@ -566,8 +566,20 @@
                                 <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Βιογραφικό (PDF, DOC)</label>
                                 <div style="position: relative; border: 2px dashed #e2e8f0; border-radius: 10px; padding: 20px; text-align: center; cursor: pointer; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#002e7c'" onmouseout="this.style.borderColor='#e2e8f0'">
                                     <svg style="width: 32px; height: 32px; color: #94a3b8; margin: 0 auto 8px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" /></svg>
-                                    <p style="color: #64748b; font-size: 14px; margin: 0;">Σύρετε αρχείο ή <span style="color: #002e7c; font-weight: 600;">επιλέξτε</span></p>
-                                    <input type="file" name="cv" accept=".pdf,.doc,.docx" style="position: absolute; inset: 0; opacity: 0; cursor: pointer;">
+                                    <p x-show="!fileName" style="color: #64748b; font-size: 14px; margin: 0;">Σύρετε αρχείο ή <span style="color: #002e7c; font-weight: 600;">επιλέξτε</span></p>
+                                    <div x-show="fileName" x-cloak style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                        <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                                        <span style="color: #334155; font-size: 14px; font-weight: 500;" x-text="fileName"></span>
+                                        <span style="color: #94a3b8; font-size: 13px;" x-text="'(' + fileSize + ')'"></span>
+                                    </div>
+                                    <input type="file" name="cv" accept=".pdf,.doc,.docx" style="position: absolute; inset: 0; opacity: 0; cursor: pointer;" @change="
+                                        if ($event.target.files.length) {
+                                            let f = $event.target.files[0];
+                                            fileName = f.name;
+                                            let kb = (f.size / 1024).toFixed(1);
+                                            fileSize = kb > 1024 ? (kb / 1024).toFixed(1) + ' MB' : kb + ' KB';
+                                        } else { fileName = ''; fileSize = ''; }
+                                    ">
                                 </div>
                             </div>
                             <button type="submit" :disabled="submitting" class="cv-submit-btn">
