@@ -479,25 +479,25 @@
                             @csrf
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
                                 <div>
-                                    <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Όνομα <span style="color: #c3057d;">*</span></label>
-                                    <input type="text" name="first_name" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                    <label for="contact_first_name" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Όνομα <span style="color: #c3057d;">*</span></label>
+                                    <input type="text" id="contact_first_name" name="first_name" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                                 </div>
                                 <div>
-                                    <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Επώνυμο <span style="color: #c3057d;">*</span></label>
-                                    <input type="text" name="last_name" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                    <label for="contact_last_name" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Επώνυμο <span style="color: #c3057d;">*</span></label>
+                                    <input type="text" id="contact_last_name" name="last_name" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                                 </div>
                             </div>
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Email <span style="color: #c3057d;">*</span></label>
-                                <input type="email" name="email" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                <label for="contact_email" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Email <span style="color: #c3057d;">*</span></label>
+                                <input type="email" id="contact_email" name="email" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                             </div>
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Τηλέφωνο <span style="color: #c3057d;">*</span></label>
-                                <input type="tel" name="phone" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                <label for="contact_phone" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Τηλέφωνο <span style="color: #c3057d;">*</span></label>
+                                <input type="tel" id="contact_phone" name="phone" required style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                             </div>
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Μήνυμα</label>
-                                <textarea name="message" rows="5" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box; resize: vertical; font-family: inherit;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'"></textarea>
+                                <label for="contact_message" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Μήνυμα</label>
+                                <textarea id="contact_message" name="message" rows="5" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box; resize: vertical; font-family: inherit;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'"></textarea>
                             </div>
                             <button type="submit" class="cv-submit-btn">Αποστολή</button>
                         </form>
@@ -528,7 +528,7 @@
                 <!-- Header -->
                 <div style="padding: 30px 30px 0; display: flex; justify-content: space-between; align-items: flex-start;">
                     <h3 style="font-size: 22px; font-weight: 700; color: #002e7c; margin: 0;">Θέσεις Εργασίας</h3>
-                    <button @click="open = false" style="background: none; border: none; cursor: pointer; padding: 4px; color: #94a3b8;">
+                    <button @click="open = false" aria-label="Κλείσιμο" style="background: none; border: none; cursor: pointer; padding: 4px; color: #94a3b8;">
                         <svg style="width: 24px; height: 24px;" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
                     </button>
                 </div>
@@ -547,23 +547,23 @@
                     " enctype="multipart/form-data" style="padding: 0 30px 30px;">
                         <div style="display: flex; flex-direction: column; gap: 16px;">
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Όνομα <span style="color: #c3057d;">*</span></label>
-                                <input type="text" name="first_name" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                <label for="cv_first_name" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Όνομα <span style="color: #c3057d;">*</span></label>
+                                <input type="text" id="cv_first_name" name="first_name" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                             </div>
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Επώνυμο <span style="color: #c3057d;">*</span></label>
-                                <input type="text" name="last_name" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                <label for="cv_last_name" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Επώνυμο <span style="color: #c3057d;">*</span></label>
+                                <input type="text" id="cv_last_name" name="last_name" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                             </div>
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Τηλέφωνο <span style="color: #c3057d;">*</span></label>
-                                <input type="tel" name="phone" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                <label for="cv_phone" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Τηλέφωνο <span style="color: #c3057d;">*</span></label>
+                                <input type="tel" id="cv_phone" name="phone" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                             </div>
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Email <span style="color: #c3057d;">*</span></label>
-                                <input type="email" name="email" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
+                                <label for="cv_email" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Email <span style="color: #c3057d;">*</span></label>
+                                <input type="email" id="cv_email" name="email" required style="width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#e2e8f0'">
                             </div>
                             <div>
-                                <label style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Βιογραφικό (PDF, DOC)</label>
+                                <label for="cv_file" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Βιογραφικό (PDF, DOC)</label>
                                 <div style="position: relative; border: 2px dashed #e2e8f0; border-radius: 10px; padding: 20px; text-align: center; cursor: pointer; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#002e7c'" onmouseout="this.style.borderColor='#e2e8f0'">
                                     <svg style="width: 32px; height: 32px; color: #94a3b8; margin: 0 auto 8px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" /></svg>
                                     <p x-show="!fileName" style="color: #64748b; font-size: 14px; margin: 0;">Σύρετε αρχείο ή <span style="color: #002e7c; font-weight: 600;">επιλέξτε</span></p>
@@ -572,7 +572,7 @@
                                         <span style="color: #334155; font-size: 14px; font-weight: 500;" x-text="fileName"></span>
                                         <span style="color: #94a3b8; font-size: 13px;" x-text="'(' + fileSize + ')'"></span>
                                     </div>
-                                    <input type="file" name="cv" accept=".pdf,.doc,.docx" style="position: absolute; inset: 0; opacity: 0; cursor: pointer;" @change="
+                                    <input type="file" id="cv_file" name="cv" accept=".pdf,.doc,.docx" style="position: absolute; inset: 0; opacity: 0; cursor: pointer;" @change="
                                         if ($event.target.files.length) {
                                             let f = $event.target.files[0];
                                             fileName = f.name;
