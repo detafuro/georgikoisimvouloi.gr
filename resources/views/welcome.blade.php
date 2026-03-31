@@ -1002,9 +1002,9 @@
 <style>
     .a11y-toolbar {
         position: fixed;
-        bottom: 13px;
-        left: 10px;
-        z-index: 9998;
+        bottom: 64px;
+        right: 10px;
+        z-index: 10001;
         font-family: 'Roboto', sans-serif;
         transition: opacity 0.3s;
     }
@@ -1012,6 +1012,7 @@
         .a11y-toolbar {
             bottom: 23px;
             left: 20px;
+            right: auto;
         }
     }
     .a11y-toggle {
@@ -1035,7 +1036,7 @@
     .a11y-panel {
         position: absolute;
         bottom: 58px;
-        left: 0;
+        right: 0;
         background: #fff;
         border-radius: 16px;
         box-shadow: 0 10px 40px rgba(0,0,0,0.2);
@@ -1045,6 +1046,12 @@
         visibility: hidden;
         transform: translateY(10px);
         transition: opacity 0.25s, visibility 0.25s, transform 0.25s;
+    }
+    @media (min-width: 768px) {
+        .a11y-panel {
+            right: auto;
+            left: 0;
+        }
     }
     .a11y-panel[aria-hidden="false"] {
         opacity: 1;
