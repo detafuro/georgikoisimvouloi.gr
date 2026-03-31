@@ -29,10 +29,10 @@
     left: 0;
 }
 
-/* Focus visible */
+/* Focus visible — !important overrides inline outline:none on form inputs */
 *:focus-visible {
-    outline: 3px solid var(--color-brand-blue);
-    outline-offset: 2px;
+    outline: 3px solid var(--color-brand-blue) !important;
+    outline-offset: 2px !important;
 }
 
 /* Smooth scroll */

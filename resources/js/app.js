@@ -8,13 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuButton && mobileMenu) {
         function openMenu() {
             menuButton.setAttribute('aria-expanded', 'true');
+            mobileMenu.setAttribute('aria-hidden', 'false');
+            mobileMenu.style.visibility = 'visible';
             mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
             mobileMenu.style.opacity = '1';
         }
         function closeMenu() {
             menuButton.setAttribute('aria-expanded', 'false');
+            mobileMenu.setAttribute('aria-hidden', 'true');
             mobileMenu.style.maxHeight = '0';
             mobileMenu.style.opacity = '0';
+            // Wait for transition to complete before hiding
+            setTimeout(() => {
+                if (menuButton.getAttribute('aria-expanded') === 'false') {
+                    mobileMenu.style.visibility = 'hidden';
+                }
+            }, 350);
         }
 
         menuButton.addEventListener('click', () => {
@@ -25,6 +34,44 @@ document.addEventListener('DOMContentLoaded', () => {
         // Close menu when clicking a link
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => closeMenu());
+        });
+
+        // Close menu on Escape key
+        mobileMenu.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeMenu();
+                menuButton.focus();
+            }
+        });
+    }
+
+    // Tab keyboard navigation (arrow keys per WAI-ARIA tabs pattern)
+    const tablist = document.querySelector('[role="tablist"]');
+    if (tablist) {
+        const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+        tablist.addEventListener('keydown', (e) => {
+            const currentIndex = tabs.indexOf(document.activeElement);
+            if (currentIndex === -1) return;
+            let newIndex;
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                e.preventDefault();
+                newIndex = (currentIndex + 1) % tabs.length;
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                newIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+            } else if (e.key === 'Home') {
+                e.preventDefault();
+                newIndex = 0;
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                newIndex = tabs.length - 1;
+            }
+            if (newIndex !== undefined) {
+                tabs[currentIndex].setAttribute('tabindex', '-1');
+                tabs[newIndex].setAttribute('tabindex', '0');
+                tabs[newIndex].focus();
+                tabs[newIndex].click();
+            }
         });
     }
 
