@@ -1006,7 +1006,7 @@
         right: 10px;
         z-index: 10001;
         font-family: 'Roboto', sans-serif;
-        transition: opacity 0.3s;
+        transition: opacity 0.3s, bottom 0.5s ease-in-out;
     }
     @media (min-width: 768px) {
         .a11y-toolbar {
@@ -1287,13 +1287,31 @@
         savePrefs();
     });
 
-    // Hide at bottom of page (same logic as ESPA banner)
+    // Position a11y toolbar above ESPA on mobile, hide at page bottom
     var toolbar = document.getElementById('a11y-toolbar');
-    window.addEventListener('scroll', function() {
+    var espaFloat = document.querySelector('.espa-floating');
+    var gap = 10;
+
+    function updateToolbarPosition() {
         var atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 100);
         toolbar.style.opacity = atBottom ? '0' : '1';
         toolbar.style.pointerEvents = atBottom ? 'none' : '';
-    }, { passive: true });
+
+        if (window.innerWidth < 768 && espaFloat) {
+            var espaRect = espaFloat.getBoundingClientRect();
+            var fromBottom = window.innerHeight - espaRect.top;
+            toolbar.style.bottom = (fromBottom + gap) + 'px';
+        } else {
+            toolbar.style.bottom = '';
+        }
+    }
+
+    if (espaFloat) {
+        new ResizeObserver(updateToolbarPosition).observe(espaFloat);
+    }
+    window.addEventListener('scroll', updateToolbarPosition, { passive: true });
+    window.addEventListener('resize', updateToolbarPosition, { passive: true });
+    updateToolbarPosition();
 
     loadPrefs();
 })();
