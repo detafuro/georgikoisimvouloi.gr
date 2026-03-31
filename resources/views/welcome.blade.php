@@ -402,12 +402,12 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
                                     </svg>
                                 </div>
-                                <h2 id="theseis-ergasias-heading" class="text-xl sm:text-xl md:text-3xl font-bold" style="color: #c3057d; white-space: nowrap;">Θέσεις Εργασίας</h2>
+                                <h2 id="theseis-ergasias-heading" class="text-xl sm:text-xl md:text-3xl font-bold" style="color: #c3057d;">Θέσεις Εργασίας</h2>
                             </div>
                             <p class="mt-4 leading-relaxed" style="font-size: 18px; color: #222222;">Η εταιρεία <strong>ΓΕΩΡΓΙΚΟΙ ΣΥΜΒΟΥΛΟΙ Ε.Ε.</strong> στα πλαίσια της ανάπτυξης της, αναζητά συνεργάτες με ομαδικό πνεύμα και θέληση για εργασία σε όλο το φάσμα των δραστηριοτήτων της.</p>
                         </div>
                         <div>
-                            <button onclick="window.dispatchEvent(new CustomEvent('open-cv-modal'))" class="inline-block rounded-full px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:opacity-90 hover:shadow-lg cursor-pointer" style="background: linear-gradient(135deg, #002e7c, #c3057d); white-space: nowrap; border: none;">Επικοινωνήστε μαζί μας</button>
+                            <button onclick="window.dispatchEvent(new CustomEvent('open-cv-modal'))" class="inline-block rounded-full px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:opacity-90 hover:shadow-lg cursor-pointer" style="background: linear-gradient(135deg, #002e7c, #c3057d); border: none;">Επικοινωνήστε μαζί μας</button>
                         </div>
                     </div>
                 </div>
@@ -477,7 +477,7 @@
                         @endif
                         <form action="/api/contact" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
                             @csrf
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div class="contact-name-grid">
                                 <div>
                                     <label for="contact_first_name" style="display: block; font-size: 14px; font-weight: 500; color: #334155; margin-bottom: 6px;">Όνομα <span style="color: #c3057d;">*</span></label>
                                     <input type="text" id="contact_first_name" name="first_name" autocomplete="given-name" required style="width: 100%; padding: 12px 16px; border: 1px solid #94a3b8; border-radius: 12px; font-size: 15px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='#002e7c'" onblur="this.style.borderColor='#94a3b8'">
@@ -839,7 +839,15 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+    .contact-name-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
     @media (max-width: 767px) {
+        .contact-name-grid {
+            grid-template-columns: 1fr;
+        }
         main p, section p {
             font-size: 16px !important;
         }
@@ -1190,7 +1198,7 @@
     var baseFontSize = 16;
     var currentStep = 0;
     var maxStep = 4;
-    var stepSize = 2;
+    var stepSize = window.innerWidth < 768 ? 1 : 2;
 
     // Restore from localStorage
     function loadPrefs() {
