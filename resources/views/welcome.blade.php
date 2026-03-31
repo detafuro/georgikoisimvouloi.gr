@@ -965,5 +965,323 @@
     </div>
 </div>
 
+<!-- Accessibility Toolbar (Α.Μ.Ε.Α.) -->
+<div id="a11y-toolbar" class="a11y-toolbar" role="region" aria-label="Εργαλεία προσβασιμότητας">
+    <button id="a11y-toggle" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel" aria-label="Προσβασιμότητα">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="4.5" r="2"/>
+            <path d="M12 7.5v5m0 0l-3.5 5.5m3.5-5.5l3.5 5.5"/>
+            <path d="M7 10.5h10"/>
+        </svg>
+    </button>
+    <div id="a11y-panel" class="a11y-panel" aria-hidden="true">
+        <p class="a11y-title">Προσβασιμότητα</p>
+        <div class="a11y-group">
+            <p class="a11y-label">Μέγεθος γραμματοσειράς</p>
+            <div class="a11y-row">
+                <button id="a11y-font-dec" class="a11y-btn" aria-label="Μείωση γραμματοσειράς">A-</button>
+                <button id="a11y-font-reset" class="a11y-btn" aria-label="Επαναφορά γραμματοσειράς">A</button>
+                <button id="a11y-font-inc" class="a11y-btn" aria-label="Αύξηση γραμματοσειράς">A+</button>
+            </div>
+        </div>
+        <div class="a11y-group">
+            <p class="a11y-label">Αντίθεση</p>
+            <div class="a11y-row">
+                <button id="a11y-contrast-high" class="a11y-btn a11y-btn-contrast-high" aria-label="Υψηλή αντίθεση" aria-pressed="false">
+                    <span style="display:flex;align-items:center;gap:6px;"><span style="width:14px;height:14px;border-radius:50%;background:#000;border:2px solid #fff;display:inline-block;"></span> Α/Μ</span>
+                </button>
+                <button id="a11y-contrast-yellow" class="a11y-btn a11y-btn-contrast-yellow" aria-label="Μαύρο και κίτρινο" aria-pressed="false">
+                    <span style="display:flex;align-items:center;gap:6px;"><span style="width:14px;height:14px;border-radius:50%;background:#ffd700;border:2px solid #000;display:inline-block;"></span> Μ/Κ</span>
+                </button>
+            </div>
+        </div>
+        <button id="a11y-reset" class="a11y-btn a11y-btn-reset" aria-label="Επαναφορά όλων">Επαναφορά</button>
+    </div>
+</div>
+
+<style>
+    .a11y-toolbar {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9998;
+        font-family: 'Roboto', sans-serif;
+    }
+    @media (max-width: 767px) {
+        .a11y-toolbar {
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+    .a11y-toggle {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #002e7c, #c3057d);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .a11y-toggle:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    .a11y-panel {
+        position: absolute;
+        bottom: 58px;
+        left: 0;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        padding: 20px;
+        width: 220px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.25s, visibility 0.25s, transform 0.25s;
+    }
+    .a11y-panel[aria-hidden="false"] {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .a11y-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #002e7c;
+        margin: 0 0 14px;
+    }
+    .a11y-group {
+        margin-bottom: 14px;
+    }
+    .a11y-label {
+        font-size: 13px;
+        font-weight: 500;
+        color: #64748b;
+        margin: 0 0 8px;
+    }
+    .a11y-row {
+        display: flex;
+        gap: 6px;
+    }
+    .a11y-btn {
+        flex: 1;
+        padding: 8px 6px;
+        border: 1px solid #94a3b8;
+        border-radius: 8px;
+        background: #f8fafc;
+        color: #002e7c;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s;
+        text-align: center;
+        font-family: inherit;
+    }
+    .a11y-btn:hover {
+        background: #e2e8f0;
+        border-color: #002e7c;
+    }
+    .a11y-btn[aria-pressed="true"] {
+        background: #002e7c;
+        color: #fff;
+        border-color: #002e7c;
+    }
+    .a11y-btn-reset {
+        width: 100%;
+        margin-top: 4px;
+        background: transparent;
+        color: #c3057d;
+        border-color: #c3057d;
+        font-size: 13px;
+    }
+    .a11y-btn-reset:hover {
+        background: #c3057d;
+        color: #fff;
+    }
+
+    /* High Contrast Mode: Black & White */
+    body.a11y-high-contrast,
+    body.a11y-high-contrast * {
+        background-color: #000 !important;
+        color: #fff !important;
+        border-color: #fff !important;
+    }
+    body.a11y-high-contrast img {
+        filter: grayscale(100%) contrast(1.2) !important;
+    }
+    body.a11y-high-contrast a {
+        color: #ffff00 !important;
+        text-decoration: underline !important;
+    }
+    body.a11y-high-contrast .a11y-panel {
+        background: #111 !important;
+        box-shadow: 0 10px 40px rgba(255,255,255,0.15) !important;
+    }
+    body.a11y-high-contrast .a11y-btn {
+        background: #222 !important;
+        color: #fff !important;
+        border-color: #fff !important;
+    }
+    body.a11y-high-contrast .a11y-btn:hover {
+        background: #444 !important;
+    }
+    body.a11y-high-contrast .a11y-btn[aria-pressed="true"] {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    /* Black & Yellow Mode */
+    body.a11y-yellow-contrast,
+    body.a11y-yellow-contrast * {
+        background-color: #000 !important;
+        color: #ffd700 !important;
+        border-color: #ffd700 !important;
+    }
+    body.a11y-yellow-contrast img {
+        filter: grayscale(100%) contrast(1.2) !important;
+    }
+    body.a11y-yellow-contrast a {
+        color: #fff !important;
+        text-decoration: underline !important;
+    }
+    body.a11y-yellow-contrast .a11y-panel {
+        background: #111 !important;
+        box-shadow: 0 10px 40px rgba(255,215,0,0.15) !important;
+    }
+    body.a11y-yellow-contrast .a11y-btn {
+        background: #222 !important;
+        color: #ffd700 !important;
+        border-color: #ffd700 !important;
+    }
+    body.a11y-yellow-contrast .a11y-btn:hover {
+        background: #444 !important;
+    }
+    body.a11y-yellow-contrast .a11y-btn[aria-pressed="true"] {
+        background: #ffd700 !important;
+        color: #000 !important;
+    }
+</style>
+
+<script>
+(function() {
+    var toggle = document.getElementById('a11y-toggle');
+    var panel = document.getElementById('a11y-panel');
+    var fontInc = document.getElementById('a11y-font-inc');
+    var fontDec = document.getElementById('a11y-font-dec');
+    var fontReset = document.getElementById('a11y-font-reset');
+    var contrastHigh = document.getElementById('a11y-contrast-high');
+    var contrastYellow = document.getElementById('a11y-contrast-yellow');
+    var resetAll = document.getElementById('a11y-reset');
+
+    var baseFontSize = 16;
+    var currentStep = 0;
+    var maxStep = 4;
+    var stepSize = 2;
+
+    // Restore from localStorage
+    function loadPrefs() {
+        try {
+            var saved = JSON.parse(localStorage.getItem('a11y_prefs'));
+            if (saved) {
+                if (saved.fontStep) {
+                    currentStep = saved.fontStep;
+                    applyFontSize();
+                }
+                if (saved.contrast) applyContrast(saved.contrast);
+            }
+        } catch(e) {}
+    }
+
+    function savePrefs() {
+        try {
+            var contrast = '';
+            if (document.body.classList.contains('a11y-high-contrast')) contrast = 'high';
+            else if (document.body.classList.contains('a11y-yellow-contrast')) contrast = 'yellow';
+            localStorage.setItem('a11y_prefs', JSON.stringify({ fontStep: currentStep, contrast: contrast }));
+        } catch(e) {}
+    }
+
+    function applyFontSize() {
+        document.documentElement.style.fontSize = (baseFontSize + currentStep * stepSize) + 'px';
+    }
+
+    function applyContrast(mode) {
+        document.body.classList.remove('a11y-high-contrast', 'a11y-yellow-contrast');
+        contrastHigh.setAttribute('aria-pressed', 'false');
+        contrastYellow.setAttribute('aria-pressed', 'false');
+        if (mode === 'high') {
+            document.body.classList.add('a11y-high-contrast');
+            contrastHigh.setAttribute('aria-pressed', 'true');
+        } else if (mode === 'yellow') {
+            document.body.classList.add('a11y-yellow-contrast');
+            contrastYellow.setAttribute('aria-pressed', 'true');
+        }
+    }
+
+    // Toggle panel
+    toggle.addEventListener('click', function() {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !expanded);
+        panel.setAttribute('aria-hidden', expanded);
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+            toggle.setAttribute('aria-expanded', 'false');
+            panel.setAttribute('aria-hidden', 'true');
+            toggle.focus();
+        }
+    });
+
+    // Close on outside click
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.a11y-toolbar') && toggle.getAttribute('aria-expanded') === 'true') {
+            toggle.setAttribute('aria-expanded', 'false');
+            panel.setAttribute('aria-hidden', 'true');
+        }
+    });
+
+    // Font size controls
+    fontInc.addEventListener('click', function() {
+        if (currentStep < maxStep) { currentStep++; applyFontSize(); savePrefs(); }
+    });
+    fontDec.addEventListener('click', function() {
+        if (currentStep > -maxStep) { currentStep--; applyFontSize(); savePrefs(); }
+    });
+    fontReset.addEventListener('click', function() {
+        currentStep = 0; applyFontSize(); savePrefs();
+    });
+
+    // Contrast controls
+    contrastHigh.addEventListener('click', function() {
+        var active = document.body.classList.contains('a11y-high-contrast');
+        applyContrast(active ? '' : 'high');
+        savePrefs();
+    });
+    contrastYellow.addEventListener('click', function() {
+        var active = document.body.classList.contains('a11y-yellow-contrast');
+        applyContrast(active ? '' : 'yellow');
+        savePrefs();
+    });
+
+    // Reset all
+    resetAll.addEventListener('click', function() {
+        currentStep = 0;
+        applyFontSize();
+        applyContrast('');
+        savePrefs();
+    });
+
+    loadPrefs();
+})();
+</script>
+
 </body>
 </html>
