@@ -41,7 +41,7 @@
                     <a href="#services" class="text-base font-medium text-brand-blue hover:text-brand-magenta transition-colors">Υπηρεσίες</a>
                     <a href="#theseis-ergasias" class="text-base font-medium text-brand-blue hover:text-brand-magenta transition-colors">Θέσεις Εργασίας</a>
                     <a href="#epikoinonia" class="text-base font-medium text-brand-blue hover:text-brand-magenta transition-colors">Επικοινωνία</a>
-                    <a href="tel:2382504781" class="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-white transition-all duration-300 ease-in-out hover:opacity-90 hover:shadow-lg" style="background: linear-gradient(135deg, #002e7c, #c3057d);"><svg style="width: 16px; height: 16px;" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>23825 04781</a>
+                    <a href="tel:2382504782" class="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-white transition-all duration-300 ease-in-out hover:opacity-90 hover:shadow-lg" style="background: linear-gradient(135deg, #002e7c, #c3057d);"><svg style="width: 16px; height: 16px;" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>23825 04782</a>
                 </nav>
 
                 <!-- Mobile Menu Button -->
@@ -66,7 +66,7 @@
                     <a href="#services" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Υπηρεσίες</a>
                     <a href="#theseis-ergasias" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Θέσεις Εργασίας</a>
                     <a href="#epikoinonia" class="rounded-md px-3 py-2 text-sm font-medium text-brand-blue hover:bg-gray-100">Επικοινωνία</a>
-                    <a href="tel:2382504781" class="inline-flex items-center justify-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-white text-center" style="background: linear-gradient(135deg, #002e7c, #c3057d);"><svg style="width: 16px; height: 16px;" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>23825 04781</a>
+                    <a href="tel:2382504782" class="inline-flex items-center justify-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-white text-center" style="background: linear-gradient(135deg, #002e7c, #c3057d);"><svg style="width: 16px; height: 16px;" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>23825 04782</a>
                 </div>
             </nav>
         </div>
@@ -443,7 +443,7 @@
                                 </div>
                                 <div>
                                     <div style="font-weight: 600; color: #002e7c; font-size: 15px;">Τηλέφωνο</div>
-                                    <div style="color: #64748b; font-size: 14px; margin-top: 2px;">23825 04781</div>
+                                    <div style="color: #64748b; font-size: 14px; margin-top: 2px;">23825 04782</div>
                                 </div>
                             </div>
                             <!-- Email -->
@@ -633,7 +633,7 @@
                             <span style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                                 <svg style="width: 16px; height: 16px; color: #c3057d;" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
                             </span>
-                            <span style="color: #fff; font-size: 14px;">23825 04781</span>
+                            <span style="color: #fff; font-size: 14px;">23825 04782</span>
                         </li>
                         <li style="display: flex; align-items: center; gap: 12px;">
                             <span style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
