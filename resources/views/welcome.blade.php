@@ -1002,15 +1002,16 @@
 <style>
     .a11y-toolbar {
         position: fixed;
-        bottom: 20px;
-        left: 20px;
+        bottom: 13px;
+        left: 10px;
         z-index: 9998;
         font-family: 'Roboto', sans-serif;
+        transition: opacity 0.3s;
     }
-    @media (max-width: 767px) {
+    @media (min-width: 768px) {
         .a11y-toolbar {
-            bottom: 10px;
-            left: 10px;
+            bottom: 23px;
+            left: 20px;
         }
     }
     .a11y-toggle {
@@ -1278,6 +1279,14 @@
         applyContrast('');
         savePrefs();
     });
+
+    // Hide at bottom of page (same logic as ESPA banner)
+    var toolbar = document.getElementById('a11y-toolbar');
+    window.addEventListener('scroll', function() {
+        var atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 100);
+        toolbar.style.opacity = atBottom ? '0' : '1';
+        toolbar.style.pointerEvents = atBottom ? 'none' : '';
+    }, { passive: true });
 
     loadPrefs();
 })();
