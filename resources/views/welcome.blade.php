@@ -940,17 +940,75 @@
         transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
         margin-top: 0;
     }
-    .espa-content a {
+    .espa-content a, .espa-content button.espa-banner-btn {
         display: block;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        width: 100%;
     }
     .espa-content img {
         width: 100%;
         height: auto;
         display: block;
     }
+    .espa-modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 100000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .espa-modal {
+        background: white;
+        border-radius: 16px;
+        max-width: 640px;
+        width: 100%;
+        padding: 36px 32px 32px;
+        position: relative;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+    .espa-modal h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #1a237e;
+        margin: 0 0 16px;
+        line-height: 1.4;
+    }
+    .espa-modal p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #333;
+        margin: 0;
+    }
+    .espa-modal-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #666;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background 0.2s;
+    }
+    .espa-modal-close:hover {
+        background: #f0f0f0;
+    }
 </style>
 
-<div x-data="{ open: true, autoCollapsed: false, atBottom: false }"
+<div x-data="{ open: true, autoCollapsed: false, atBottom: false, showEspaModal: false }"
      x-on:scroll.window="
          if (!autoCollapsed && window.scrollY > 200) { autoCollapsed = true; open = false }
          atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 100)
@@ -967,9 +1025,16 @@
         </svg>
     </button>
     <div class="espa-content">
-        <a href="/frameEL.pdf" target="_blank" rel="noopener noreferrer">
+        <button class="espa-banner-btn" @click="showEspaModal = true" aria-label="Πληροφορίες ΕΣΠΑ">
             <picture><source srcset="/antagonistikotitaframeEL.webp" type="image/webp"><img src="/antagonistikotitaframeEL.jpg" alt="ΕΣΠΑ - Ευρωπαϊκό Ταμείο Περιφερειακής Ανάπτυξης" loading="lazy" width="1956" height="231"></picture>
-        </a>
+        </button>
+    </div>
+    <div class="espa-modal-overlay" x-show="showEspaModal" x-transition.opacity @click.self="showEspaModal = false" x-cloak>
+        <div class="espa-modal" @keydown.escape.window="showEspaModal = false">
+            <button class="espa-modal-close" @click="showEspaModal = false" aria-label="Κλείσιμο">&times;</button>
+            <h2>Βασικός Ψηφιακός Μετασχηματισμός της επιχείρησης «ΒΨΜ-0007071»</h2>
+            <p>Η ΕΠΙΧΕΙΡΗΣΗ ΧΡΗΜΑΤΟΔΟΤΗΘΗΚΕ ΑΠΟ ΤΗΝ ΔΡΑΣΗ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ ΑΝΤΑΓΩΝΙΣΤΙΚΟΤΗΤΑ (ΕΣΠΑ 2021 - 2027) "ΒΑΣΙΚΟΣ ΨΗΦΙΑΚΟΣ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟΣ" ΤΗΣ ΔΕΣΜΗΣ ΔΡΑΣΕΩΝ "ΨΗΦΙΑΚΟΣ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟΣ ΜμΕ". Η ΔΡΑΣΗ ΣΤΟΧΕΥΕΙ ΣΤΗΝ ΚΑΛΥΨΗ ΒΑΣΙΚΩΝ ΑΝΑΓΚΩΝ ΤΩΝ ΜμΕ ΜΕ ΣΥΓΧΡΟΝΕΣ ΤΕΧΝΟΛΟΓΙΕΣ ΠΛΗΡΟΦΟΡΙΚΗΣ ΚΑΙ ΕΠΙΚΟΙΝΩΝΙΩΝ ΠΟΥ ΣΥΝΕΙΣΦΕΡΟΥΝ ΣΕ ΜΙΑ ΕΞΩΣΤΡΕΦΗ, ΚΑΙΝΟΤΟΜΑ ΚΑΙ ΑΝΤΑΓΩΝΙΣΤΙΚΗ ΠΑΡΑΓΩΓΗ ΠΡΟΪΟΝΤΩΝ Ή ΥΠΗΡΕΣΙΩΝ.</p>
+        </div>
     </div>
 </div>
 
